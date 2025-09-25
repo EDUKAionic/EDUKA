@@ -1,0 +1,7 @@
+{
+  "name": "EdukaFrontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
