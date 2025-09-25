@@ -78,6 +78,26 @@ ion-label p {
   color: #666;
   margin: 6px 0 0;
 }
+ion-item.card {
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ion-item.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Icônes */
+ion-icon {
+  font-size: 26px;
+  color: #000;
+  margin-right: 12px;
+}
+
 
 /* Mobile */
 @media (max-width: 420px) {

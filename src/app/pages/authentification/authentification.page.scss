@@ -1,0 +1,91 @@
+ion-content {
+  --background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Logo */
+.header {
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* Bouton retour en cercle */
+.back-button {
+  position: absolute;
+  top: 70px;
+  left: 45px;
+  
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icône dans le bouton */
+.back-button ion-icon {
+  font-size: 25px;
+  color: #000000;
+}
+
+.logo {
+  width: 160px;
+  margin-bottom: 12px;
+}
+
+/* Texte intro */
+.intro {
+  margin: 30px 20px;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Formulaire */
+.login-form {
+  width: 100%;
+  max-width: 340px;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 40px;
+  --border-radius: 12px;
+}
+
+ion-input {
+  --padding-start: 44px;
+  font-size: 15px;
+  --background: #f9fafb;    /* gris très clair */
+  --border-radius: 10px;
+  --border-color: #d1d5db;  /* gris neutre */
+  --border-width: 5px;
+}
+
+ion-input::part(native) {
+  border-radius: 10px;
+}
+
+ion-icon {
+  font-size: 20px;
+  color: #6b7280;
+}
+
+/* Bouton */
+.submit-button {
+  height: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #1d75db;
+  border-radius: 12px;
+}
