@@ -1,0 +1,123 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Photo de profil et nom -->
+  <div class="profile-header">
+    <div class="avatar-container">
+      <img src="assets/enfant.jpg" alt="Fatoumata Bah" class="profile-avatar">
+    </div>
+    <h1 class="profile-name">Fatoumata Bah</h1>
+  </div>
+
+  <!-- Informations âge et niveau -->
+  <ion-card class="info-card">
+    <ion-card-content>
+      <div class="age-level-info">
+        <div class="info-item">
+          <ion-icon name="calendar-outline" class="info-icon"></ion-icon>
+          <span class="info-text">8 ans (25/05/2017)</span>
+        </div>
+        <div class="info-item">
+          <span class="level-text">Niveau : CE2</span>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Son Histoire -->
+  <ion-card class="story-card">
+    <ion-card-content>
+      <h2 class="section-title">Son Histoire</h2>
+      <p class="story-text">
+        Fatoumata commence tout juste sa scolarité avec beaucoup d'enthousiasme. Elle vit avec sa mère célibataire qui vend des légumes au marché. Elle adore dessiner et chanter, et montre déjà de grandes aptitudes pour l'apprentissage.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Informations scolaires -->
+  <ion-card class="info-section-card">
+    <ion-card-content>
+      <div class="info-row">
+        <div class="info-icon-container">
+          <div class="icon-circle">
+            <ion-icon name="school-outline" class="section-icon"></ion-icon>
+          </div>
+        </div>
+        <div class="info-content">
+          <span class="info-label">École</span>
+          <span class="info-value">École Primaire de Ségou</span>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon-container">
+          <div class="icon-circle">
+            <ion-icon name="location-outline" class="section-icon"></ion-icon>
+          </div>
+        </div>
+        <div class="info-content">
+          <span class="info-label">Localisation</span>
+          <span class="info-value">Ségou, Mali</span>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon-container">
+          <div class="icon-circle">
+            <ion-icon name="ribbon-outline" class="section-icon"></ion-icon>
+          </div>
+        </div>
+        <div class="info-content">
+          <span class="info-label">Statut</span>
+          <span class="info-value status-sponsored">Parrainée</span>
+        </div>
+        <div class="contact-sponsor">
+          <span class="contact-text">Contacter Parrain</span>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Infos Tuteur -->
+  <ion-card class="info-section-card">
+    <ion-card-content>
+      <h2 class="section-title">Infos Tuteur</h2>
+      
+      <!-- HTML avec paramètres -->
+<div class="info-row">
+  <div class="info-icon-container">
+    <div class="icon-circle">
+      <ion-icon name="person-outline" class="section-icon"></ion-icon>
+    </div>
+  </div>
+  <div class="info-content">
+    <span class="info-value">Haoua Bah</span>
+  </div>
+  <button class="edit-button" (click)="goToModifierProfil('nom')">
+    <ion-icon name="pencil-outline"></ion-icon>
+  </button>
+</div>
+
+<div class="info-row">
+  <div class="info-icon-container">
+    <div class="icon-circle">
+      <ion-icon name="call-outline" class="section-icon"></ion-icon>
+    </div>
+  </div>
+  <div class="info-content">
+    <span class="info-value">+223 75757575</span>
+  </div>
+  <button class="edit-button" (click)="goToModifierProfil('telephone')">
+    <ion-icon name="pencil-outline"></ion-icon>
+  </button>
+</div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

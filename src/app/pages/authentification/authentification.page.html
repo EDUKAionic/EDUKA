@@ -1,13 +1,16 @@
 <ion-content class="ion-padding">
-  <ion-button class="back-button" fill="clear">
-    <ion-icon name="arrow-back-outline"></ion-icon>
-  </ion-button>
-  <!-- Logo -->
-  <div class="header">
-    <img src="assets/logo.png" alt="EDUKA Logo" class="logo"/>
+  <div class="header-container">
+    <ion-button class="back-button" fill="clear"  (click)="goBack()">
+     <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-button>
+    
+    <!-- Logo -->
+    <div class="header">
+      <img src="assets/logo.png" alt="EDUKA Logo" class="logo"/>
+    </div>
   </div>
 
-  <!-- Texte d’intro -->
+  <!-- Texte d'intro -->
   <div class="intro">
     <p>
       Connectez-vous pour suivre la scolarité et les progrès de votre enfant en toute transparence.
@@ -16,23 +19,23 @@
 
   <!-- Formulaire -->
   <form class="login-form" (ngSubmit)="onSubmit()">
+  <ion-item class="form-group" lines="none">
+  <ion-label position="stacked">Téléphone</ion-label>
 
-    <ion-item class="form-group">
-      <ion-label position="stacked">Téléphone</ion-label>
-      <ion-input
-        type="tel"
-        placeholder="+223 75 79 40 44"
-        fill="outline"
-        [(ngModel)]="phone"
-        name="phone"
-      >
-        <ion-icon name="call-outline" slot="start"></ion-icon>
-      </ion-input>
-    </ion-item>
+  <!-- Groupe icône + input -->
+  <ion-input
+    type="tel"
+    placeholder="+223 75 79 40 44"
+    [(ngModel)]="phone"
+    name="phone"
+    style="text-align: right;"
+  >
+    <ion-icon slot="start" name="call-outline"></ion-icon>
+  </ion-input>
+</ion-item>
 
-    <ion-button expand="block" shape="round" class="submit-button" type="submit">
+    <ion-button expand="block" shape="round" class="submit-button" type="submit" routerLink="/authentification2">
       Suivant
     </ion-button>
   </form>
-
 </ion-content>

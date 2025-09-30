@@ -1,0 +1,193 @@
+.profile-content {
+  --background: #ffffff;
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+}
+
+ion-toolbar {
+  --background: #1D75DB;
+  --color: #FFFFFF;
+}
+
+ion-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+}
+
+ion-back-button {
+  --color: #FFFFFF;
+}
+
+/* Header avec photo */
+.profile-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.profile-image-container {
+  width: 340px;
+  height: 175px;
+  margin: 0 auto;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Informations personnelles */
+.personal-info {
+  padding: 24px 20px 16px;
+  text-align: center;
+}
+
+.child-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1D75DB;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 0 8px;
+}
+
+.info-label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #374151;
+  text-align: left;
+  flex: 1;
+}
+
+.info-value {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #6B7280;
+  text-align: right;
+  flex: 1;
+}
+
+/* Sections */
+section {
+  padding: 0 20px;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1D75DB;
+  margin: 0 0 12px 0;
+  text-align: left;
+}
+
+.bio-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6B7280;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Grille des besoins */
+.needs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.need-item {
+  background: #F0FDF4;
+  border-left: 3px solid #1D75DB;
+  border-radius: 10px;
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.need-icon {
+  font-size: 16px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.need-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #6B7280;
+}
+
+/* Bouton de parrainage */
+.sponsor-action {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.sponsor-btn {
+  --background: #1D75DB;
+  --background-activated: #1565c0;
+  --background-hover: #1565c0;
+  --border-radius: 10px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: none;
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+/* Responsive */
+@media (max-width: 360px) {
+  .profile-image-container {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  .needs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .info-value {
+    text-align: left;
+  }
+}

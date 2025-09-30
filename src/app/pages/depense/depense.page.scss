@@ -1,0 +1,136 @@
+ion-header {
+  ion-toolbar {
+    --background: #ffffff;
+  }
+}
+
+ion-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+ion-content {
+  --background: #ffffff;
+}
+
+.month-section {
+  margin-bottom: 30px;
+}
+
+.month-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 20px 0 15px 0;
+  padding: 0 10px;
+}
+
+.expense-card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  margin: 12px 0;
+  
+  ion-card-content {
+    padding: 16px;
+  }
+}
+
+.expense-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.expense-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  
+  ion-icon {
+    font-size: 20px;
+    color: white;
+  }
+}
+
+.pink-bg {
+  background: #FF7ED8;
+}
+
+.yellow-bg {
+  background: #FFD43B;
+}
+
+.green-bg {
+  background: #43A047;
+}
+
+.blue-bg {
+  background: #1D75DB;
+}
+
+.expense-info {
+  flex: 1;
+}
+
+.expense-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin: 0 0 4px 0;
+}
+
+.expense-date {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #666666;
+  margin: 0;
+}
+
+.expense-amount {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  text-align: right;
+  min-width: 80px;
+}
+
+.payment-status {
+  display: flex;
+  align-items: center;
+  padding-left: 55px; /* Align with expense info */
+}
+
+.status-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.status-icon.paid {
+  color: #43A047;
+}
+
+.status-icon.pending {
+  color: #FFD43B;
+}
+
+.status-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #666666;
+}

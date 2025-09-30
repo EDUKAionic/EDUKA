@@ -59,16 +59,17 @@ ion-content {
 }
 
 .form-group {
-  margin-bottom: 40px;
-  --border-radius: 12px;
+  margin-bottom: 50px;
+ 
+  
 }
 
 ion-input {
-  --padding-start: 44px;
+  --padding-start: 40px;
   font-size: 15px;
   --background: #f9fafb;    /* gris très clair */
   --border-radius: 10px;
-  --border-color: #d1d5db;  /* gris neutre */
+  --border-color: #131416;  /* gris neutre */
   --border-width: 5px;
 }
 
@@ -84,8 +85,8 @@ ion-icon {
 /* Bouton */
 .submit-button {
   height: 55px;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   background: #1d75db;
   border-radius: 12px;
 }

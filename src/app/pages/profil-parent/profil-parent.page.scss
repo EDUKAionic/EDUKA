@@ -1,0 +1,215 @@
+ion-header {
+  ion-toolbar {
+    --background: #ffffff;
+  }
+}
+
+ion-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+ion-content {
+  --background: #ffffff;
+}
+
+/* Header du profil */
+.profile-header {
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+.profile-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin: 0;
+}
+
+/* Cartes générales */
+.info-card, .story-card, .info-section-card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  margin: 15px 0;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.33);
+}
+
+.story-card, .info-section-card {
+  background: #ffffff;
+}
+
+/* Informations âge et niveau */
+.age-level-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-icon {
+  font-size: 18px;
+  color: #000000;
+}
+
+.info-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.level-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+/* Section Histoire */
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1D75DB;
+  margin: 0 0 12px 0;
+}
+
+.story-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  color: #6B7280;
+  margin: 0;
+}
+
+/* Lignes d'information */
+.info-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.info-icon-container {
+  margin-right: 15px;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background: #F0F8FF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-icon {
+  font-size: 20px;
+  color: #1D75DB;
+}
+
+.info-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.status-sponsored {
+  color: #43A047;
+}
+
+/* Contact parrain */
+.contact-sponsor {
+  margin-left: auto;
+  text-align: right;
+}
+
+.contact-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+}
+
+/* Boutons d'édition */
+.edit-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  ion-icon {
+    font-size: 25px;
+    color: #1D75DB;
+  }
+}
+
+/* Responsive */
+@media (max-width: 380px) {
+  .age-level-info {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+  }
+}

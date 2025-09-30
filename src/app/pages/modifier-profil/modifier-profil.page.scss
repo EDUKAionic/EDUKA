@@ -1,0 +1,150 @@
+ion-header {
+  ion-toolbar {
+    --background: #ffffff;
+    --border-width: 0;
+    padding-top: 10px;
+  }
+}
+
+.page-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+ion-back-button {
+  --color: #000000;
+  --icon-font-size: 24px;
+}
+
+ion-content {
+  --background: #ffffff;
+  --padding-start: 24px;
+  --padding-end: 24px;
+  --padding-top: 40px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-label {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #6b7280;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.form-item {
+  --background: transparent;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  --border-width: 0;
+  --inner-border-width: 0;
+  margin: 0;
+  
+  &::part(native) {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+.form-input {
+  --padding-start: 45px;
+  --padding-end: 15px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  --background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  min-height: 50px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  width: 100%;
+  
+  &::placeholder {
+    color: #6b7280;
+    font-size: 16px;
+  }
+  
+  &.ion-focused {
+    border-color: #1d75db;
+    box-shadow: 0 0 0 2px rgba(29, 117, 219, 0.1);
+  }
+}
+
+/* Supprimer les styles par défaut d'Ionic */
+ion-item {
+  --border-width: 0;
+  --inner-border-width: 0;
+  --show-full-highlight: 0;
+  --show-inset-highlight: 0;
+  
+  &::part(native) {
+    background: transparent;
+  }
+}
+
+/* Style pour le conteneur d'input */
+.input-container ion-item {
+  background: transparent;
+}
+
+/* Bouton Enregistrer */
+.submit-btn {
+  --background: #1d75db;
+  --border-radius: 15px;
+  --color: #ffffff;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 40px;
+  
+  &:hover {
+    --background: #1565c0;
+  }
+  
+  &:disabled {
+    --background: #b0b0b0;
+    --color: #ffffff;
+  }
+}
+
+/* Ajustement pour le focus */
+ion-input {
+  --highlight-height: 0;
+}
+
+/* Assurer que l'input prend toute la largeur */
+.form-input::part(native) {
+  width: 100%;
+}

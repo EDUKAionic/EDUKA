@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Enfants à Parrainer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="search-container">
+    <div class="search-bar">
+      <ion-icon name="search-outline" class="search-icon"></ion-icon>
+      <input type="text" placeholder="Rechercher..." class="search-input">
+    </div>
+  </div>
+
+  <div class="children-list">
+    <!-- Carte Aminata -->
+    <ion-card class="child-card">
+      <div class="card-content">
+        <div class="child-image">
+          <img src="assets/enfant.jpg" alt="Aminata TRAORÉ">
+        </div>
+        <div class="child-info">
+          <h3 class="child-name">Aminata TRAORÉ</h3>
+          <p class="child-details">10 ans, Ecole des Dames de Bamako</p>
+          <p class="child-description">
+            Aminata commence tout juste sa scolarité avec beaucoup d'enthousiasme. 
+            Elle vit avec sa mère célibataire qui vend des légumes au marché.
+          </p>
+        </div>
+      </div>
+      <div class="card-actions">
+        <ion-button class="btn-profile" fill="solid">
+          Voir profil
+        </ion-button>
+        <ion-button class="btn-sponsor" fill="solid">
+          Parrainer
+        </ion-button>
+      </div>
+    </ion-card>
+
+    <!-- Carte Bintou -->
+    <ion-card class="child-card">
+      <div class="card-content">
+        <div class="child-image">
+          <img src="assets/enfant.jpg" alt="Bintou TOURE">
+        </div>
+        <div class="child-info">
+          <h3 class="child-name">Bintou TOURE</h3>
+          <p class="child-details">10 ans, Ecole des Dames de Bamako</p>
+          <p class="child-description">
+            Bintou est une élève brillante en 2ème, passionnée par la lecture et le dessin. 
+            Elle rêve de devenir enseignante pour aider les autres enfants à apprendre.
+          </p>
+        </div>
+      </div>
+      <div class="card-actions">
+        <ion-button class="btn-profile" fill="solid">
+          Voir profil
+        </ion-button>
+        <ion-button class="btn-sponsor" fill="solid">
+          Parrainer
+        </ion-button>
+      </div>
+    </ion-card>
+
+    <!-- Répéter pour d'autres enfants si nécessaire -->
+  </div>
+</ion-content>

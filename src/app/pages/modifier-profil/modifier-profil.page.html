@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title class="page-title">Modifier Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <form class="profile-form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    
+    <!-- Prénom -->
+    <div class="form-group">
+      <ion-label class="form-label">Prénom</ion-label>
+      <div class="input-container">
+        <ion-icon name="person-outline" class="input-icon"></ion-icon>
+        <ion-item class="form-item">
+          <ion-input 
+            formControlName="prenom"
+            type="text" 
+            placeholder="Votre prénom"
+            class="form-input">
+          </ion-input>
+        </ion-item>
+      </div>
+    </div>
+
+    <!-- Nom -->
+    <div class="form-group">
+      <ion-label class="form-label">Nom</ion-label>
+      <div class="input-container">
+        <ion-icon name="person-outline" class="input-icon"></ion-icon>
+        <ion-item class="form-item">
+          <ion-input 
+            formControlName="nom"
+            type="text" 
+            placeholder="Votre nom"
+            class="form-input">
+          </ion-input>
+        </ion-item>
+      </div>
+    </div>
+
+    <!-- Téléphone -->
+    <div class="form-group">
+      <ion-label class="form-label">Téléphone</ion-label>
+      <div class="input-container">
+        <ion-icon name="call-outline" class="input-icon"></ion-icon>
+        <ion-item class="form-item">
+          <ion-input 
+            formControlName="telephone"
+            type="tel" 
+            value="+223 75 79 40 44"
+            class="form-input">
+          </ion-input>
+        </ion-item>
+      </div>
+    </div>
+
+    <!-- Bouton Enregistrer -->
+    <ion-button 
+      type="submit" 
+      expand="block" 
+      class="submit-btn"
+      [disabled]="!profileForm.valid">
+      Enregistrer
+    </ion-button>
+
+  </form>
+</ion-content>

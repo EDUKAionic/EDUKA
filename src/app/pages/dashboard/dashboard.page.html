@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <img src="assets/logo1.png" alt="App Logo" class="app-logo" />
+    </ion-buttons>
+    <ion-title class="page-title">Tableau de bord</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="notifications-outline" class="notif"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Bannière bienvenue -->
+  <ion-card class="welcome-card">
+    <ion-card-content>
+      <h2>Bienvenue Niakale !</h2>
+      <p>Suivez votre enfant sur votre espace personnel</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Boutons d'action -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <ion-card class="action-card blue" (click)="goToPaiement()">
+          <ion-card-content>
+            <ion-icon name="cash-outline"></ion-icon>
+            <p>Paiements</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card class="action-card yellow" (click)="goToDepense()">
+          <ion-card-content>
+            <ion-icon name="wallet-outline"></ion-icon>
+            <p>Dépenses</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card class="action-card green" (click)="goToProfil()">
+          <ion-card-content>
+            <ion-icon name="person-outline"></ion-icon>
+            <p>Profil</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Liste des dépenses -->
+  <h3 class="section-title">Dépenses Récentes Payées</h3>
+
+  <ion-list>
+    <ion-item lines="none">
+      <ion-avatar slot="start" class="pink-bg">
+        <ion-icon name="fast-food-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2>Cantine scolaire</h2>
+          <p>15 Mars 2025 </p>
+         <p>Payé par Boubou TOURE</p>
+      </ion-label>
+      <ion-note slot="end">25 000 FCFA</ion-note>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-avatar slot="start" class="yellow-bg">
+        <ion-icon name="shirt-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2>Uniforme scolaire</h2>
+        <p>15 Mars 2025 </p>
+         <p>Payé par Boubou TOURE</p>
+      </ion-label>
+      <ion-note slot="end">35 000 FCFA</ion-note>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-avatar slot="start" class="green-bg">
+        <ion-icon name="school-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2>Frais de scolarité</h2>
+          <p>15 Mars 2025 </p>
+         <p>Payé par Boubou TOURE</p>
+      </ion-label>
+      <ion-note slot="end">25 000 FCFA</ion-note>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

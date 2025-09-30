@@ -1,0 +1,128 @@
+ion-header {
+  ion-toolbar {
+    --background: #ffffff;
+  }
+}
+
+ion-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+ion-content {
+  --background: #ffffff;
+}
+
+.month-section {
+  margin-bottom: 30px;
+}
+
+.month-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 20px 0 15px 0;
+  padding: 0 10px;
+}
+
+.payment-card {
+  background: rgba(243, 243, 243, 0.5);
+  border-radius: 10px;
+  margin: 12px 0;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+  
+  ion-card-content {
+    padding: 20px;
+  }
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  min-width: 120px;
+}
+
+.value {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1D75DB;
+  text-align: right;
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Styles spécifiques pour chaque type de valeur */
+.value.method {
+  font-weight: 700;
+  color: #1D75DB;
+}
+
+.value.amount {
+  font-weight: 700;
+  color: #1D75DB;
+}
+
+.value.date {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #1D75DB;
+}
+
+.value.sender {
+  font-weight: 700;
+  color: #1D75DB;
+}
+
+.value.receiver {
+  font-weight: 700;
+  color: #1D75DB;
+}
+
+.value.status {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.value.status.success {
+  color: #02A8A8;
+}
+
+/* Responsive */
+@media (max-width: 380px) {
+  .payment-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .value {
+    text-align: left;
+    margin-left: 0;
+  }
+  
+  .label {
+    min-width: auto;
+  }
+}

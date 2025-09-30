@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Paiement</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div *ngFor="let monthData of paymentsData" class="month-section">
+    <h2 class="month-title">{{ monthData.month }}</h2>
+    
+    <ion-card *ngFor="let payment of monthData.payments" class="payment-card">
+      <ion-card-content>
+        <div class="payment-row">
+          <span class="label">Référence</span>
+          <span class="value">{{ payment.reference }}</span>
+        </div>
+        <div class="payment-row">
+          <span class="label">Méthode</span>
+          <span class="value method">{{ payment.method }}</span>
+        </div>
+        <div class="payment-row">
+          <span class="label">Payement</span>
+          <span class="value amount">{{ payment.amount }}</span>
+        </div>
+        <div class="payment-row">
+          <span class="label">Date:</span>
+          <span class="value date">{{ payment.date }}</span>
+        </div>
+        <div class="payment-row">
+          <span class="label">Nom expéditeur</span>
+          <span class="value sender">{{ payment.sender }}</span>
+        </div>
+        <div class="payment-row">
+          <span class="label">Nom destinateur</span>
+          <span class="value receiver">{{ payment.receiver }}</span>
+        </div>
+        <div class="payment-row">
+          <span class="label">Statut:</span>
+          <span class="value status success">{{ payment.status }}</span>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

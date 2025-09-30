@@ -1,0 +1,115 @@
+ion-content {
+  --background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Container pour aligner le bouton retour et le logo */
+.header-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Bouton retour */
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.back-button ion-icon {
+  font-size: 30px;
+  color: #000000;
+}
+
+/* Header avec logo */
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+.login-form {
+  width: 100%;
+  max-width: 340px;
+  margin-top: 30px;
+}
+
+.form-container {
+  margin-bottom: 50px;
+}
+
+.input-label {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+/* Groupe input avec icône - CORRECTION ICI */
+.input-group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #6b7280;
+  z-index: 10;
+}
+
+.otp-input {
+  --padding-start: 55px !important; /* Augmenté pour plus d'espace */
+  --padding-end: 16px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  font-size: 18px;
+  --background: #f9fafb;
+  --border-radius: 12px;
+  --border-color: #d1d5db;
+  --border-width: 1px;
+  --border-style: solid;
+  width: 100%;
+  height: 56px;
+}
+
+/* Style pour le placeholder et le texte */
+.otp-input::part(input) {
+  text-align: left;
+  font-size: 18px;
+}
+
+/* Bouton */
+.submit-button {
+  height: 55px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #1d75db;
+  border-radius: 12px;
+}

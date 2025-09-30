@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/parrain-filleuls" text="Retour"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Aminata Traoré</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="profile-content">
+  <!-- Photo de profil -->
+  <div class="profile-header">
+    <div class="profile-image-container">
+      <img 
+        src="assets/enfant.jpg" 
+        alt="Aminata Traoré"
+        class="profile-image"
+        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQwIiBoZWlnaHQ9IjE3NSIgdmlld0JveD0iMCAwIDM0MCAxNzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzNDAiIGhlaWdodD0iMTc1IiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjE3MCIgeT0iODcuNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNkI3MjgwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5JbWFnZSBkZSBwcm9maWw8L3RleHQ+Cjwvc3ZnPgo='"
+      >
+    </div>
+  </div>
+
+  <!-- Informations personnelles -->
+  <div class="personal-info">
+    <h1 class="child-name">Aminata Traoré</h1>
+    
+    <div class="info-item">
+      <span class="info-label">Date de naissance :</span>
+      <span class="info-value">10/12/2017</span>
+    </div>
+    
+    <div class="info-item">
+      <span class="info-label">Niveau scolaire :</span>
+      <span class="info-value">CP</span>
+    </div>
+    
+    <div class="info-item">
+      <span class="info-label">École :</span>
+      <span class="info-value">École Primaire de Bamako Centre</span>
+    </div>
+  </div>
+
+  <!-- Biographie -->
+  <section class="bio-section">
+    <h2 class="section-title">Biographie</h2>
+    <p class="bio-text">
+      Aminata commence tout juste sa scolarité avec beaucoup d'enthousiasme. 
+      Elle vit avec sa mère célibataire qui vend des légumes au marché. 
+      Elle adore dessiner et chanter, et montre déjà de grandes aptitudes pour l'apprentissage.
+    </p>
+  </section>
+
+  <!-- Besoins identifiés -->
+  <section class="needs-section">
+    <h2 class="section-title">Besoins identifiés</h2>
+    <div class="needs-grid">
+      <div class="need-item" *ngFor="let need of needs">
+        <span class="need-icon">{{need.icon}}</span>
+        <span class="need-name">{{need.name}}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bouton de parrainage -->
+  <div class="sponsor-action">
+    <ion-button 
+      expand="block" 
+      class="sponsor-btn"
+      (click)="sponsorChild()"
+    >
+      Parrainer cet enfant
+    </ion-button>
+  </div>
+</ion-content>

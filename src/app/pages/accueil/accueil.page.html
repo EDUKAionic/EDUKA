@@ -7,24 +7,24 @@
     <p class="slogan">Transparence totale dans le parrainage scolaire</p>
   </div>
 
-  <!-- Choix d’espace -->
+  <!-- Choix d'espace -->
   <div class="title">
     <h3>Choisissez votre espace</h3>
     <p>Accédez à votre tableau selon votre profil</p>
   </div>
 
-  <!-- Boutons d’espace -->
+  <!-- Boutons d'espace -->
   <ion-list lines="none">
 
     <ion-item button detail="true" class="card">
       <ion-icon name="heart-outline"></ion-icon>
       <ion-label>
         <h2>Espace Parrain</h2>
-        <p>Suivez l’impact de votre don</p>
+        <p>Suivez l'impact de votre don</p>
       </ion-label>
     </ion-item>
 
-    <ion-item button detail="true" class="card">
+    <ion-item button detail="true" class="card" (click)="goToAuthentificationParent()">
       <ion-icon name="people-outline" slot="start"></ion-icon>
       <ion-label>
         <h2>Espace Parent</h2>

@@ -1,22 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-import { IonContent, IonList, IonItem, IonLabel, IonIcon } from '@ionic/angular/standalone';
-import { addIcons } from 'ionicons';
-import {  peopleOutline, globeOutline, heartOutline } from 'ionicons/icons';
-
+import { Component } from '@angular/core';
+import { 
+  IonContent, 
+  IonList, 
+  IonItem, 
+  IonIcon, 
+  IonLabel 
+} from '@ionic/angular/standalone';
+import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.page.html',
   styleUrls: ['./accueil.page.scss'],
   standalone: true,
-  imports: [IonContent, IonList, IonItem, IonLabel, IonIcon],
+  imports: [ IonContent,
+    IonList,
+    IonItem,
+    IonIcon,
+    IonLabel,
+    CommonModule],
 })
-export class AccueilPage implements OnInit {
+export class AccueilPage{
+ constructor(private router: Router) {}
 
-  constructor() {
-    addIcons({heartOutline,peopleOutline,globeOutline});
-  }
-
-  ngOnInit() {
-    
+  // Navigation vers la page d'authentification parent
+  goToAuthentificationParent() {
+    this.router.navigate(['/authentification']);
   }
 }
